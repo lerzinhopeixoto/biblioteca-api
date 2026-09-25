@@ -1,4 +1,4 @@
-package com.example.biblioteca_api;
+package com.example.biblioteca_api.model;
 
 
 import jakarta.persistence.*;

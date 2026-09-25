@@ -1,4 +1,4 @@
-package com.example.biblioteca_api;
+package com.example.biblioteca_api.dto;
 
 public class UsuarioRequestDTO {
     private String nome;

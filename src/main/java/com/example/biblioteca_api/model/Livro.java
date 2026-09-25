@@ -1,4 +1,4 @@
-package com.example.biblioteca_api;
+package com.example.biblioteca_api.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
@@ -20,7 +20,7 @@ public class Livro {
 
     @ManyToOne
     @JoinColumn(name = "autor_id")
-    private com.example.biblioteca_api.Autor autor;
+    private Autor autor;
 
     public int getId() {
         return id;
@@ -40,11 +40,11 @@ public class Livro {
         this.titulo = titulo;
     }
 
-    public com.example.biblioteca_api.Autor getAutor() {
+    public Autor getAutor() {
         return autor;
     }
 
-    public void setAutor(com.example.biblioteca_api.Autor autor) {
+    public void setAutor(Autor autor) {
         this.autor = autor;
     }
     public int getAno_publicacao() {

@@ -1,4 +1,4 @@
-package com.example.biblioteca_api;
+package com.example.biblioteca_api.security;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;

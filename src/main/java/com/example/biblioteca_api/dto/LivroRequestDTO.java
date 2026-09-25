@@ -1,4 +1,4 @@
-package com.example.biblioteca_api;
+package com.example.biblioteca_api.dto;
 
 public class LivroRequestDTO {private String titulo;
     private int ano_publicacao;

@@ -1,8 +1,7 @@
-package com.example.biblioteca_api;
+package com.example.biblioteca_api.model;
 
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
 @Entity

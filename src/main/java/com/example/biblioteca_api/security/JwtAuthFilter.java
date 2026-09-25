@@ -1,4 +1,4 @@
-package com.example.biblioteca_api;
+package com.example.biblioteca_api.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

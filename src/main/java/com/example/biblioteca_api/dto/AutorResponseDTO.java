@@ -1,4 +1,4 @@
-package com.example.biblioteca_api;
+package com.example.biblioteca_api.dto;
 
 public class AutorResponseDTO {private int id;
     private String nome;
