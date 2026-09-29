@@ -1,0 +1,154 @@
+/* Configurações gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #14141c;
+  color: #f1f1f5;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  font-size: 38px;
+  margin: 40px 20px;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* Área de login */
+#root > div > div:first-child {
+  text-align: center;
+}
+
+input {
+  padding: 12px;
+  margin: 5px;
+  border: 1px solid #444454;
+  border-radius: 6px;
+  background-color: #20202b;
+  color: white;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: 2px solid #8b5cf6;
+  border-color: transparent;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #7c3aed;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #6d28d9;
+}
+
+/* Lista de livros */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  list-style: none;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+li {
+  background-color: #20202b;
+  border: 1px solid #343443;
+  border-radius: 10px;
+  padding: 25px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  color: #e5e5eb;
+  font-size: 17px;
+  line-height: 1.5;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+}
+
+li:hover {
+  transform: translateY(-4px);
+  border-color: #8b5cf6;
+}
+
+/* Organização das informações dos livros */
+.livro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 24px;
+}
+
+.livro-card h2 {
+  font-size: 22px;
+  text-align: left;
+  margin: 0;
+  color: #ffffff;
+}
+
+.livro-card .autor {
+  color: #c4b5fd;
+  font-size: 16px;
+}
+
+.livro-card .ano {
+  color: #a1a1aa;
+  font-size: 14px;
+}
+
+.livro-capa {
+  width: 140px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+    margin: 30px 15px;
+  }
+
+  input {
+    width: 90%;
+    margin: 5px 0;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+}
